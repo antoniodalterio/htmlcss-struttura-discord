@@ -15,27 +15,82 @@ RESET
 DEBUG
 *********
 */
+.logo.debug {
+    padding-right: 200px;
+}
 
+.login.debug {
+    padding-left: 200px;
+}
 
+.link.debug {
+    text-align: center;
+}
 
 /* 
 *********
 COMMON
 *********
 */
+.login,
+.logo {
+    flex-grow: 0;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
-
 }
 
+.container>div {
+    border-left: 2px dashed black;
+    padding: 15px;
+    border-right: 2px dashed black;
+}
+
+.header-bottom.debug {
+    background-color: #00008B;
+    padding: 55px 0;
+    margin: 15px 0;
+}
+
+.box.debug {
+    max-width: 950px;
+    height: 415px;
+    background-color: #EE82EE;
+}
 
 /* 
 *********
-HEADER
+HEADER-Top
 *********
 */
 
 header {
     background-color: #ADD8E6;
+    padding-top: 15px;
+
+}
+
+.header-top {
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #DAA520;
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+
+}
+
+.link {
+    flex-grow: 2;
+}
+
+/* 
+**************
+HEADER-BOTTOM
+**************
+*/
+.box.debug {
+    border-radius: 10px;
+    margin: 0 auto;
 }
