@@ -15,6 +15,26 @@ RESET
 DEBUG
 *********
 */
+
+.header-top {
+    background-color: #DAA520;
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+}
+
+.header-bottom.debug {
+    background-color: #00008B;
+    padding: 55px 0;
+    margin: 0;
+}
+
+.box.debug {
+    max-width: 950px;
+    height: 415px;
+    background-color: #EE82EE;
+    border: 2px dashed black;
+}
+
 .logo.debug {
     padding-right: 200px;
 }
@@ -27,37 +47,70 @@ DEBUG
     text-align: center;
 }
 
+.container-one.debug,
+.container-two.debug {
+    border: 2px dashed black;
+}
+
+.riquadro.debug,
+.riquadro-tre.debug {
+    background-color: #1e90ff;
+}
+
+.riquadro-due.debug,
+.riquadro-quattro.debug {
+    background-color: #FFC0CB;
+    min-height: 520px;
+    border-left: 2px dashed black;
+}
+
+.riquadro-quattro.debug {
+    border-right: 2px dashed black;
+    border-left: 0px dashed black;
+}
+
+.green-screen.debug {
+    max-width: 1250px;
+    min-height: 930px;
+    background-color: #228b22;
+    border: 2px dashed black;
+}
+
 /* 
 *********
 COMMON
 *********
 */
+section {
+    padding: 50px 0;
+}
+
 .login,
 .logo {
     flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.container {
+.container-header {
     display: flex;
     justify-content: space-between;
 }
 
-.container>div {
+.container-header>div {
     border-left: 2px dashed black;
-    padding: 15px;
+    padding: 10px;
     border-right: 2px dashed black;
 }
 
-.header-bottom.debug {
-    background-color: #00008B;
-    padding: 55px 0;
-    margin: 15px 0;
+.container-one,
+.container-two {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
-.box.debug {
-    max-width: 950px;
-    height: 415px;
-    background-color: #EE82EE;
+.container-two {
+    flex-direction: row-reverse;
 }
 
 /* 
@@ -75,9 +128,7 @@ header {
 .header-top {
     max-width: 1250px;
     margin: 0 auto;
-    background-color: #DAA520;
-    border-bottom: 2px dashed black;
-    border-top: 2px dashed black;
+    margin-bottom: 15px;
 
 }
 
@@ -90,7 +141,47 @@ header {
 HEADER-BOTTOM
 **************
 */
-.box.debug {
-    border-radius: 10px;
+
+.box {
     margin: 0 auto;
+}
+
+/* 
+*********
+MAIN
+*********
+*/
+
+/* 
+*********
+SEZIONE 1
+*********
+*/
+
+.riquadro,
+.riquadro-tre {
+    flex-grow: 2;
+}
+
+/* 
+*********
+SEZIONE 2
+*********
+*/
+.riquadro-due,
+.riquadro-quattro {
+    flex-grow: 1;
+}
+
+.sezione-2 {
+    background-color: #d3d3d3;
+}
+
+/* 
+*********
+SEZIONE 4
+*********
+*/
+.green-screen {
+    margin: auto;
 }
