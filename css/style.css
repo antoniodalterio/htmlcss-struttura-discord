@@ -9,3 +9,33 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+*********
+DEBUG
+*********
+*/
+
+
+
+/* 
+*********
+COMMON
+*********
+*/
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* 
+*********
+HEADER
+*********
+*/
+
+header {
+    background-color: #ADD8E6;
+}
